@@ -1,0 +1,1 @@
+all.cs es el archivo de iconos de fontawesome
