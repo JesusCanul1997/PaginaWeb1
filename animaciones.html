@@ -14,7 +14,7 @@
 
 	<!-- Carga de estilos css personalizados -->
 	<link rel="stylesheet" href="css/estilos.css">
-	<link rel="stylesheet" href="css/animaciones.css">
+	<link rel="stylesheet" href="css/proyecto.css">
 
 	<!-- Carga de titulo e imagen de icono de pestaña -->
 	<title>Animaciones - JECKA1997</title>
@@ -24,6 +24,18 @@
 	<!-- jQuery first, then Tether, then Bootstrap JS. -->
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-144553377-1"></script>
+	<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', 'UA-144553377-1');
+	</script>
+
+
 </head>
 
 <body>
@@ -50,18 +62,23 @@
 						<a class="nav-link" href="#cuerpo">Animaciones</a>
 					</li>
 					<li class="nav-item">
+						<a class="nav-link" href="proyectos.html">proyectos</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="otros.html">Otros</a>
+					</li>
+					<li class="nav-item">
 						<a class="nav-link" href="#contactoo">Contacto</a>
 					</li>
 				</ul>
 			</div>
 		</div>
-	</nav>
-		
+	</nav>	
 
 	<!--cuerpo para proyectos-->
 	<section id="cuerpo" class="cuerpo">
 		<h2 class="pt-3  text-xs-center">ANIMACIONES JECKA1997</h2>
-		<iframe width="100%" height="95%" src="cuerpos/cuerpoAnimacion.html" frameborder="0" allowfullscreen></iframe>
+		<iframe class="responsive" width="100%" height="95%" src="cuerpos/cuerpoAnimaciones.html" frameborder="0" allowfullscreen></iframe>
 	</section>	  
 
 	<!--pie de pagina para contacto-->

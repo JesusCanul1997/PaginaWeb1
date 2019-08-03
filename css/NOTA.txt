@@ -1,1 +1,2 @@
-all.cs es el archivo de iconos de fontawesome
+all.cs ------- fontawesome
+estilos.css -- index.html

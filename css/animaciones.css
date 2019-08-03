@@ -46,6 +46,12 @@ html {
   display:block;
   background-color: #ddd;
 }
+
+iframe .responsive{
+  width:100%;
+  height:90%;
+}
+
 /*aqui inicia el pie de pagina*/
 footer{
   background-color:#111;
@@ -72,6 +78,10 @@ footer p{
       background-position: center;
       background-repeat: no-repeat;
       overflow: hidden;
+    }
+    section .responsive{
+      width:100%;
+      height:100%;
     }
   
     }
