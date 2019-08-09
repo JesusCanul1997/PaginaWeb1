@@ -56,7 +56,10 @@ html {
   text-transform: uppercase;
   margin-top: 9rem; 
 }
-
+.display-4 {
+  font-size: 2.5rem;
+  font-weight: 350;
+}
 .btn-primary {
   background-color: #2A487E;
   border-color: #2A487E;
@@ -154,6 +157,11 @@ html {
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
+  }
+  
+  .display-4 {
+    font-size: 4rem;
+    font-weight: 400;
   }
 
   }
