@@ -13,7 +13,7 @@
             justify-content:center;
             align-items:center;
             min-width: 100vh;
-            background-color: #875497;
+            background-color: #121213;
         }
         .loader{
             margin-top:10vh;
@@ -21,7 +21,7 @@
             width:300px;
             height:300px;
             transform-style: preserve-3d;
-            transform:perspective(600px) rotatex(60deg );
+            transform:perspective(500px) rotatex(60deg );
         }
         .loader span{
             position: absolute;
@@ -29,15 +29,15 @@
             border:3px solid #fff;
             box-sizing: border-box;
             border-radius:50%;
-            transform: translateZ(-100px);
+            transform: translatez(-100px);
             animation: escaleras 3s ease-in-out infinite;
         }
         @keyframes escaleras{
             0%,100%{
-                transform: translateZ(-100px);
+                transform: translatez(-100px);
             }
             50%{
-                transform: translateZ(100px);
+                transform: translatez(100px);
             }
         }
         .loader span:nth-child(1){
