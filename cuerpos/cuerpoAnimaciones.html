@@ -19,7 +19,7 @@ body {
   border: 1px solid #ccc;
   background-color: #f1f1f1;
   width: 20%;
-  height:80vh;
+  height:90vh;
 }
 
 /* Style the buttons inside the tab */
@@ -57,7 +57,7 @@ body {
   border: 1px solid #ccc;
   width: 80%;
   border-left: none;
-  height:80vh;
+  height:90vh;
 }
 
 /* Media query para diseño responsive*/
@@ -66,11 +66,19 @@ body {
      font-size: 16px;
      padding: 10px 7px;
     }
+    .tab,
+    .tabcontent{
+      height:99vh;
+    }
   }
 @media (min-width: 768px) {
     .tab button {
      font-size: 17px;
      padding: 10px 16px;
+    }
+    .tab,
+    .tabcontent{
+      height:99vh;
     }
   }
   
@@ -87,8 +95,8 @@ body {
 </div>
 
 <div id="a1" class="tabcontent">
-  <iframe class="responsive" width="100%" height="85%" src="animaciones/Animacion1.html" frameborder="0" allowfullscreen></iframe>
-  <a class="btn btn-primary"  download="Animacion 1: Onda" href="animaciones/Animacion1.rar">DESCARGA EL CODIGO</a>
+  <iframe class="responsive" width="100%" height="100%" src="animaciones/Animacion1.html" frameborder="0" allowfullscreen></iframe>
+
 </div>
 
 <div id="a2" class="tabcontent">

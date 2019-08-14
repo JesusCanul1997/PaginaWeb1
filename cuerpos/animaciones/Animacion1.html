@@ -6,31 +6,38 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <style>
+        html{
+            justify-items: center;
+            justify-content: left;
+        }
         body{
-            margin: 0;
-            padding:0;
+            margin: 0px;
+            padding:0px;
             display:flex;
             justify-content:center;
             align-items:center;
             min-width: 100vh;
-            background-color: #121213;
+            background-color: #0c0c0c;
+            transform: scale(0.50);
         }
         .loader{
-            margin-top:10vh;
+            margin-top:0;
+            margin-right:0;
             position:relative;
             width:300px;
             height:300px;
             transform-style: preserve-3d;
-            transform:perspective(500px) rotatex(60deg );
+            transform:perspective(600px) rotatex(60deg);
         }
         .loader span{
             position: absolute;
             display:block;
-            border:3px solid #fff;
+            border:2px solid #fff;
             box-sizing: border-box;
             border-radius:50%;
             transform: translatez(-100px);
             animation: escaleras 3s ease-in-out infinite;
+
         }
         @keyframes escaleras{
             0%,100%{
@@ -51,7 +58,6 @@
             top:10px;
             left:10px;
             right: 10px;
-            animation-delay:0.1s;
             bottom: 10px;
             animation-delay:1.3s;
         }
@@ -146,6 +152,18 @@
             bottom: 140px;
             animation-delay:0s;
         }
+          /*EMPIEZAN LOS MEDIAS QUERIES*/
+        @media (min-width:500px) {
+            body{
+                transform: scale(0.7);
+            }
+        }
+        @media (min-width: 768px) {
+            body{
+                transform: scale(1);
+            }
+        }
+
     </style>
 
 </head>
