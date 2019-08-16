@@ -2,15 +2,22 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<!--Carga de bootstrap-->
+<link rel="stylesheet" href="../css/bootstrap.css">
+<!-- Carga de fuentes de Font  Awesome -->
+<link rel="stylesheet" href="../css/all.css">
+
 
 <!-- Estilo del cuerpo-->
 <style>
 * {
-    box-sizing: border-box
-    }
+    box-sizing: border-box;
+    
+  }
 
 body {
-    font-family: "Lato", sans-serif;
+    font-family:apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     }
 
 /* Style the tab */
@@ -19,7 +26,7 @@ body {
   border: 1px solid #ccc;
   background-color: #f1f1f1;
   width: 20%;
-  height:80vh;
+  height:85vh;
 }
 
 /* Style the buttons inside the tab */
@@ -57,20 +64,56 @@ body {
   border: 1px solid #ccc;
   width: 80%;
   border-left: none;
-  height:80vh;
+  height:85vh;
 }
-
+.fas {
+  color: #2A487E;
+  font-size: 3rem; 
+}
+.fas-m{
+  padding: 0px;
+  color:#2A487E;
+  font-weight:600 ;
+  font-size:2rem;
+}
+.editor-texto{
+  width:45px;
+}
+.lista-editor{
+  text-align: center;
+  
+}
+ul li{
+  color: #2A487E;
+}
+ul li span{
+  color: black;
+}
 /* Media query para diseño responsive*/
 @media (min-width: 500px) {
     .tab button {
      font-size: 16px;
      padding: 10px 7px;
     }
+    .tab,
+    .tabcontent{
+      height:99vh;
+    }
   }
 @media (min-width: 768px) {
     .tab button {
      font-size: 17px;
      padding: 10px 16px;
+    }
+    .tab,
+    .tabcontent{
+      height:99vh;
+    }
+    .fas{
+      font-size:6rem;
+    }
+    .editor-texto{
+      width:100px;
     }
   }
   
@@ -81,18 +124,70 @@ body {
 <body>
 
 <div class="tab">
-  <button class="tablinks" onclick="openTab(event, 'o1')" id="defaultOpen">Otro 1</button>
-  <button class="tablinks" onclick="openTab(event, 'o2')">Otro 2</button>
+  <button class="tablinks" onclick="openTab(event, 'o1')" id="defaultOpen">Desarrollo Vs Diseño </button>
+  <button class="tablinks" onclick="openTab(event, 'o2')">Editor de Codigo</button>
   <button class="tablinks" onclick="openTab(event, 'o3')">Otro 3</button>
 </div>
 
-<div id="o1" class="tabcontent">
-  <h3>Herramienta 1</h3>
-  
+<div id="o1" class="tabcontent text-xs-center">
+  <div class="container">
+    <div class="row">
+    
+      <div class="col-md-5"> 
+          <h4 class="my-2">Desarrollo web</h4>
+          <i class="mb-2 fas fa-laptop-code" aria-hidden="true"></i>
+      </div>
+      <div class="col-md-2 fas-m"> 
+      VS 
+      </div>
+      <div class="col-md-5">
+         <h4 class="my-2">Diseño web</h4>
+         <i class="mb-2 fas fa-drafting-compass" aria-hidden="true"></i>
+      </div>
+    </div>
+  </div>
 </div>
 
-<div id="o2" class="tabcontent">
-  <h3>Herramienta 2</h3>
+<div id="o2" class="tabcontent text-xs-center">
+    <div class="container">
+        <div class="row">
+        
+          <div class="col-md-4"> 
+              <h4 class="my-1">Visual Studio Code</h4>
+              <img class="editor-texto"src="otros/vsc.png" alt="vsc-jecka1997">
+              <ul class="my-2">
+                <li><span>IntelliSense</span></li>
+                <li><span>Debugging</span></li>
+                <li><span>Comptible con git</span></li>
+                <li><span>Multiples Extensiones</span></li>
+              </ul>
+              <a class="btn btn-primary" href="https://code.visualstudio.com/" target="_blank">Visitar</a>
+          </div>
+          <div class="col-md-4 "> 
+              <h4 class="my-1">Sublime Text</h4>
+              <img class="editor-texto"src="otros/sublime.png" alt="vsc-jecka1997">
+              <ul class="my-2">
+                <li><span>IntelliSense</span></li>
+                <li><span>Debugging</span></li>
+                <li><span>Comptible con git</span></li>
+                <li><span>Multiples Extensiones</span></li>
+              </ul>
+              <a class="btn btn-primary" href="https://www.sublimetext.com/" target="_blank">Visitar</a>
+          </div>
+          <div class="col-md-4">
+             <h4 class="my-1">Atom</h4>
+             <img class="editor-texto"src="otros/atom.png" alt="vsc-jecka1997">
+             <ul class="my-2">
+                <li><span>IntelliSense</span></li>
+                <li><span>Debugging</span></li>
+                <li><span>Comptible con git</span></li>
+                <li><span>Multiples Extensiones</span></li>
+              </ul>
+             <a class="btn btn-primary" href="https://atom.io/" target="_blank">Visitar</a>
+             
+          </div>
+        </div>
+      </div>
 
 </div>
 
