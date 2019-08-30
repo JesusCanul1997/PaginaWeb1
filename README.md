@@ -11,6 +11,6 @@ Visita la pagina dando click en:
 
 >Pagina de la pagina web optimizadad para dispositivos **Moviles**
 
-![Index](images/index-mv-rd.png)
+![Index version movil](images/index-mv-rd.png)
 
 Pagina de aprendizaje personal creada por JESUS CANUL JECKA
