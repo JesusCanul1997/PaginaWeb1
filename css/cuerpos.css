@@ -1,0 +1,77 @@
+* {
+    box-sizing: border-box
+}
+
+body {
+    font-family: "Lato", sans-serif;
+}
+/* Style the tab */
+
+.tab {
+    float: left;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    width: 20%;
+    height: 80vh;
+}
+/* Style the buttons inside the tab */
+
+.tab button {
+    display: block;
+    background-color: inherit;
+    color: black;
+    padding: 10px 1px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.2s;
+    font-size: 14px;
+}
+/* Change background color of buttons on hover */
+
+.tab button:hover {
+    background-color: #2A487E;
+    color: #fff;
+}
+/* Create an active/current "tab button" class */
+
+.tab button.active {
+    background-color: #2A487E;
+    color: #fff;
+}
+/* Style the tab content */
+
+.tabcontent {
+    background-color: #fff;
+    float: left;
+    /* padding: 0px 5px; */
+    border: 1px solid #ccc;
+    width: 80%;
+    border-left: none;
+    height: 80vh;
+}
+/* Media query para diseño responsive*/
+
+@media (min-width: 500px) {
+    .tab button {
+        font-size: 16px;
+        padding: 10px 7px;
+    }
+    .tab,
+    .tabcontent {
+        height: 99vh;
+    }
+}
+
+@media (min-width: 768px) {
+    .tab button {
+        font-size: 17px;
+        padding: 10px 16px;
+    }
+    .tab,
+    .tabcontent {
+        height: 98vh;
+    }
+}

@@ -1,87 +1,102 @@
 html {
     font-size: 15px;
-   }
-  
+}
+
+
 /*Estilos pre-contenido*/
-  .pre-contenido{
+
+.pre-contenido {
     background: url("../images/fondo-proyecto.jpg");
-    min-height: 93vh; 
+    min-height: 93vh;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     overflow: hidden;
-  }
-  .texto-pre-contenido{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    text-transform:uppercase;
-    text-shadow:  3px 1px #111;
-    color:#FFF;
-  }
- .rounded-0{
-   border-radius: 0px;
- }
-  .py-4{
-   padding-top: 10rem;
-   padding-bottom: 12rem;
-  }
+}
+
+.texto-pre-contenido {
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    text-shadow: 3px 1px #111;
+    color: #fff;
+}
+
+.rounded-0 {
+    border-radius: 0px;
+}
+
+.py-4 {
+    padding-top: 10rem;
+    padding-bottom: 12rem;
+}
+
+
 /*Estilos navegacion*/
+
 .color-barra {
-    background: rgba(0, 0, 0, 0.85); 
-    margin:0px;
-    border:none;
-    padding:0px;
-  }
-
-  .sticky-top{
-    position:-webkit-sticky;
-    position:sticky;
-    top:0px;
-    z-index:1030;
+    background: rgba(0, 0, 0, 0.85);
+    margin: 0px;
+    border: none;
+    padding: 0px;
 }
+
+.sticky-top {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+    z-index: 1030;
+}
+
+
 /*aqui inicia el cuerpo*/
-.cuerpo{
-  width: 100%;
-  height: 100vh;
-  display:block;
-  background-color: #ddd;
+
+.cuerpo {
+    width: 100%;
+    height: 100vh;
+    display: block;
+    background-color: #ddd;
 }
 
-iframe .responsive{
-  width:100%;
-  height:90%;
+iframe .responsive {
+    width: 100%;
+    height: 94%;
 }
+
 
 /*aqui inicia el pie de pagina*/
-footer{
-  background-color:#111;
-  color:#fff;
-  display:block;
-}
-footer p{
-  margin: 0px;
+
+footer {
+    background-color: #111;
+    color: #fff;
+    display: block;
 }
 
-  /*EMPIEZAN LOS MEDIAS QUERIES*/
+footer p {
+    margin: 0px;
+}
+
+
+/*EMPIEZAN LOS MEDIAS QUERIES*/
+
 @media (min-width: 768px) {
     html {
-      font-size: 16px; }
-  
+        font-size: 16px;
+    }
     #menuprincipal {
-      clear: inherit; }
-  
+        clear: inherit;
+    }
     .pre-contenido {
-      background: url("../images/fondo-proyecto-grande.jpg");
-      background-size: cover; 
-      min-height: 93vh; 
-      background-attachment: fixed;
-      background-position: center;
-      background-repeat: no-repeat;
-      overflow: hidden;
+        background: url("../images/fondo-proyecto-grande.jpg");
+        background-size: cover;
+        min-height: 93vh;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        overflow: hidden;
     }
-    section .responsive{
-      width:100%;
-      height:100%;
+    section .responsive {
+        width: 100%;
+        height: 100%;
     }
-  
-    }
+}
